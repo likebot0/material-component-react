@@ -1,0 +1,8 @@
+.Host {
+    font-size: .9375em;
+}
+
+.Host > * {
+    min-height : max-content;
+    white-space: nowrap;
+}

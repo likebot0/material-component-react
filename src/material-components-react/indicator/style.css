@@ -1,0 +1,23 @@
+@keyframes circle {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+.Host {
+    width  : 40px;
+    height : 40px;
+    color  : #09F;
+}
+
+.Host:not(.Loading) {
+    visibility: hidden;
+}
+
+.Host.Loading.Circle {
+    animation: circle 2s linear infinite;
+}

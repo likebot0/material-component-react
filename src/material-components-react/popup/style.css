@@ -1,0 +1,30 @@
+@keyframes visible {
+    0% {
+        overflow: hidden;
+    }
+
+    100% {
+        overflow: hidden;
+    }
+}
+
+.Host {
+    position     : absolute;
+    border-radius: 2px;
+    transition   : all .3s ease-out;
+}
+
+.Host.Floating {
+    background-color: #FFFFFF;
+}
+
+.Host.Hidden {
+    overflow: hidden;
+    width   : 0;
+    height  : 0;
+    padding : 0;
+}
+
+.Host.Visible {
+    animation: visible ease-out .3s backwards;
+}

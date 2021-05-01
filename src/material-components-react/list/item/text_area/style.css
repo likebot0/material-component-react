@@ -1,0 +1,25 @@
+.Host {
+    flex-grow: 1;
+    min-width: 0;
+    margin   : 8px 0;
+}
+
+.Host > * {
+    margin : 0;
+    padding: 0;
+}
+
+.Host > :nth-child(1) {
+    overflow     : hidden;
+    text-overflow: ellipsis;
+}
+
+.Host > :nth-child(2) {
+    overflow     : hidden;
+    color        : #888;
+    width        : 100%;
+    min-height   : 1em;
+    font-size    : .875em;
+    white-space  : nowrap;
+    text-overflow: ellipsis;
+}
